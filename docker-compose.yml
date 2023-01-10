@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  MySQL:
+    container_name: orus
+    image: mysql:latest
+    volumes:
+      - ./my/own/datadir:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
