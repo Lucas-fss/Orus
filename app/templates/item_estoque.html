@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Estoque</title>
+        <script>const ipc = window.require('electron').ipcRenderer;
+			function goToSettingsWindow(){
+				ipc.send('vizualizar');  
+			}</script>
+		
+	</head>
+	<body>
+		<div>
+			<ul>
+                <li>cadastrar produto</li>
+                <li><button onclick="goToSettingsWindow()">visualizar estoque</button></li>
+            </ul>		
+		</div>
+	</body>
+</html>

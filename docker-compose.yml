@@ -1,11 +1,22 @@
 version: '3'
 
 services:
-  MySQL:
-    container_name: orus
-    image: mysql:latest
-    volumes:
-      - ./my/own/datadir:/var/lib/mysql
+  db:
+    container_name: mysql
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_DATABASE=Orus
+    volumes:
+      - /my/own/datadir:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
