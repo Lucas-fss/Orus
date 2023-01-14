@@ -12,10 +12,8 @@
 	</head>
 	<body>
 		<Header id="header">
-            <div id="header-id">
 				<h2>Menu</h2>
 				<h2>Sama Tech</h2>
-			</div>
 		</Header>
 		<div>
 			<img src="../views/images/logo.png" alt="MDN logo">
@@ -27,8 +25,10 @@
 			</div>	
 			<hr/>			
 		</div>
-		<h2>Estoque</h2>
-		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+		<div class="search">
+			<h2>Estoque</h2>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+		</div>
 		<div id="div-table">
 			<table id="table">
 				<thead>
@@ -50,6 +50,29 @@
 			</table>
 			<script src="../controllers/item_estoque_controller.js">
 			</script>
+			<script>
+				function myFunction() {
+				  // Declare variables
+				  var input, filter, table, tr, td, i, txtValue;
+				  input = document.getElementById("myInput");
+				  filter = input.value.toUpperCase();
+				  table = document.getElementById("table");
+				  tr = table.getElementsByTagName("tr");
+				
+				  // Loop through all table rows, and hide those who don't match the search query
+				  for (i = 0; i < tr.length; i++) {
+					td = tr[i].getElementsByTagName("td")[1];
+					if (td) {
+					  txtValue = td.textContent || td.innerText;
+					  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					  } else {
+						tr[i].style.display = "none";
+					  }
+					}
+				  }
+				}
+				</script>
 		</div>
 	</body>
 </html>
