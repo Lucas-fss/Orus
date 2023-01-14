@@ -55,7 +55,6 @@ cover/
 /node_modules
 
 #my_sql
-/my
 
 # Translations
 *.mo
