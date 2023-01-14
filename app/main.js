@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const item = require('./models/item_estoque.js');
 require("electron-reload")(__dirname, {
   // Note that the path to electron may vary according to the main file
-  electron: require("/home/lucas/Trab_Projeto/node_modules/electron"),
+  electron: require("../node_modules/electron"),
 });
 var estoque = new item;
 const path = require('path')

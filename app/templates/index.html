@@ -5,10 +5,19 @@
 		<script>const ipc = window.require('electron').ipcRenderer;
 			function goToEstoqueWindow(){ 
 				ipc.send('openChildWindow');  
-			}</script>
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../views/css/styles.css"/>
 	</head>
 	<body>
+		<Header id="header">
+            <div id="header-id">
+				<h2>Menu</h2>
+				<h2 >Sama Tech</h2>
+			</div>
+		</Header>
 		<div>
+			<img src="../views/images/logo.png" alt="MDN logo">
 			<ul>
 				<li><button onclick="goToEstoqueWindow()">Estoque</button></li>
 			</ul>				

@@ -1,0 +1,14 @@
+#header-id{
+    display: grid;
+    grid-template-columns: 16% 16% 16%;
+    grid-column-gap: 70%;
+    background: #67CCD7;
+}
+#header{
+    background: #67CCD7; 
+    width: 100%; 
+    height: auto; 
+    padding: 10px; 
+    margin-left: -1%; 
+    margin-top: -1%;
+}

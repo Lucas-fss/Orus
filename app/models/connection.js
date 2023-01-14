@@ -1,4 +1,3 @@
-
 class Connection{
     constructor(){
         this.mysql = require('mysql');
