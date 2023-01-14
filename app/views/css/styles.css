@@ -1,3 +1,7 @@
+html, body {
+    min-height: 100vh;
+}
+
 #header-id{
     display: grid;
     grid-template-columns: 16% 16% 16%;
@@ -8,7 +12,59 @@
     background: #67CCD7; 
     width: 100%; 
     height: auto; 
-    padding: 10px; 
+    padding: 1%; 
     margin-left: -1%; 
     margin-top: -1%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 16% 16% 16%;
+    grid-column-gap: 10%;
+    border: none;
+    justify-content: center;
+}
+
+#button-menu{
+    border: none;
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+  }
+
+#div-table{
+    display: flex;
+    justify-content: center;
+}
+#table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#table thead tr {
+    background-color: #67CCD7;
+    color: #ffffff;
+    text-align: left;
+}
+#table th,
+#table td {
+    padding: 12px 15px;
+}
+#table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#table tbody tr:last-of-type {
+    border-bottom: 2px solid #67CCD7;
 }

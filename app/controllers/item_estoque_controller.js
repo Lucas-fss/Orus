@@ -3,15 +3,6 @@ con = new item();
 con.conector();
 query(function(rows){
     var html = '';
-    html += "<td>id</td>";
-    html += "<td>Item</td>";
-    html += "<td>Fabricante</td>";
-    html += "<td>Fornecedor</td>";
-    html += "<td>Categoria</td>";
-    html += "<td>Codigo de Barras</td>";
-    html += "<td>Valor de Compra</td>";
-    html += "<td>Valor de Venda</td>";
-    html += "<td>DE dos Dispositivos</td>";
     rows.forEach(function(row){
         html += '<tr>';
         html += '<td>';

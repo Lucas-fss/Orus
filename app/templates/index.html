@@ -8,19 +8,47 @@
 			}
 		</script>
 		<link rel="stylesheet" type="text/css" href="../views/css/styles.css"/>
+		<script src="https://kit.fontawesome.com/d5b850614e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<Header id="header">
             <div id="header-id">
 				<h2>Menu</h2>
-				<h2 >Sama Tech</h2>
+				<h2>Sama Tech</h2>
 			</div>
 		</Header>
 		<div>
 			<img src="../views/images/logo.png" alt="MDN logo">
-			<ul>
-				<li><button onclick="goToEstoqueWindow()">Estoque</button></li>
-			</ul>				
+			
+			<div id="menu">
+				<button id="button-menu" ><img src="../views/images/ManutencaoCadastrada.png"/></button>
+				<button id="button-menu" ><img src="../views/images/FuncCadastrado.png"/></button>
+				<button id="button-menu" ><img src="../views/images/ClienteCadastrado.png"/></button>
+			</div>	
+			<hr/>			
+		</div>
+		<h2>Estoque</h2>
+		<div id="div-table">
+			<table id="table">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Fabricante</th>
+						<th>Fornecedor</th>
+						<th>Categoria</th>
+						<th>Quantidade</th>
+						<th>Código de Barras</th>
+						<th>Valor da Compra</th>
+						<th>Valor de Venda</th>
+						<th>DE do Dispositivo</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<script src="../controllers/item_estoque_controller.js">
+			</script>
 		</div>
 	</body>
 </html>
