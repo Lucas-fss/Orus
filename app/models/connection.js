@@ -4,7 +4,7 @@ class Connection{
         this.connection = this.mysql.createConnection({
             host     : 'localhost',
             user     : 'root',
-            password : '123456', 
+            password : '33218600Mm#', 
             database : 'Orus'
         });
     }
