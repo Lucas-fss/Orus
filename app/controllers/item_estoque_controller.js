@@ -41,7 +41,7 @@ query(function(rows){
 
 function query(callback){
 
-    $query = 'SELECT * FROM `item_estoque` LIMIT 10';
+    $query = 'SELECT * FROM `item_estoque`';
 
     con.connection.query($query, function(err, rows, fields) {
         if(err){
